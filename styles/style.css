@@ -90,6 +90,9 @@ header{
     border-radius: 50px;
     background-color: rgb(230, 83, 60);
 }
+.hamburger-menu{
+    display: none;
+}
 
 /* Banner Styles */
 .banner{
@@ -149,8 +152,15 @@ header{
 .float-1-circle{
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(230, 83, 60);
     border-radius: 50%;
+}
+.float-1-circle i{
+    color: #FFFFFF;
+    font-size: 15px;
 }
 .banner-right h4{
     font-size: 24px;
@@ -164,3 +174,92 @@ header{
 
 
 /* Responsive Media Query */
+@media screen and (max-width: 576px) {
+    .nav-inputs{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .banner{
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 5.5rem;
+    }
+    .banner-title{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    #shape{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .banner-subtitle{
+        width: 80%;
+        font-size: 0.7rem;
+    }
+    .colorful-btn{
+        padding: 0.5rem 1.4rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+    #unique-btn{
+        padding: 0.5rem 1.4rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+        margin-left: 0.7rem;
+    }
+    .float-1{
+        width: 140px;
+        height: 70px;
+        gap: 8px;
+        padding: 23px 18px;
+        border-radius: 10px;
+        top: 265px;
+        left: 28px;
+    }
+    .float-2{
+        width: 130px;
+        height: 70px;
+        padding: 23px 18px;
+        top: 50px;
+        left: 185px;
+    }
+    .float-1-circle{
+        width: 30px;
+        height: 30px;
+    }
+    .banner-right h4{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .banner-right p{
+        font-size: 9px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navbar, .banner{
+        width: 90%;
+    }
+    .nav-inputs > ul{
+        gap: 1rem;
+    }
+    .banner{
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 10.5rem;
+    }
+    .float-1{
+        top: 350px;
+        left: -30px;
+    }
+    .float-2{
+        top: 70px;
+        left: 200px;
+    }
+}
