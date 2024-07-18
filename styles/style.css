@@ -21,6 +21,20 @@
 .section-gap{
     margin-top: 100px;
 }
+.section-title{
+    font-size: 3.3rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-align: center;
+}
+.section-subtitle{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .colorful-btn{
     padding: 1rem 2.8rem;
     border: none;
@@ -49,6 +63,10 @@ body{
 header{
     /* background-color: transparent; */
     background: linear-gradient(180.00deg, rgb(45, 45, 45),rgba(119, 119, 119, 0) 100%);
+}
+main{
+    width: 80%;
+    margin: 5rem auto;
 }
 /* Navbar Styles */
 .navbar, .banner{
@@ -83,7 +101,7 @@ header{
     text-decoration: none;
 }
 #home{
-    color: white;
+    color: #FFFFFF;
     font-weight: 500;
     padding: 9px 25px;
     /* border: 2px solid white; */
@@ -172,9 +190,43 @@ header{
     font-weight: 400;
 }
 
+/* Change Your Habits Styles */
+.habit-items{
+    /* margin-left: 40px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.habit-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habit-item-img img{
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.habit-item h4{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 1.3rem;
+}
+.habit-item p{
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 1.3rem;
+}
+
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
+    .navbar, .banner{
+        width: 90%;
+    }
     .nav-inputs{
         display: none;
     }
