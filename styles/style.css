@@ -67,7 +67,7 @@ header{
     /* background-color: transparent; */
     background: linear-gradient(180.00deg, rgb(45, 45, 45),rgba(119, 119, 119, 0) 100%);
 }
-main{
+.linear-width{
     width: 80%;
     margin: 5rem auto;
 }
@@ -227,7 +227,7 @@ main{
 }
 
 /* Training and Excercise Styling */
-.training-title, .training-subtitle{
+.training-title, .training-subtitle, .bmi-calculator-subtitle{
     text-align: left;
 }
 .kothin-content{
@@ -290,6 +290,78 @@ main{
     margin-top: 245px;
 }
 
+/* BMI Calculator Styles */
+.bmi{
+    background: rgb(34, 34, 34);
+}
+.bmi-content, table{
+    margin-top: 70px;
+}
+.bmi-chart-title, .bmi-calculator-title{
+    font-size: 2rem;
+}
+table{
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 18px;
+}
+.bmi-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bmi-calculate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+.first-part > input, .second-part > input, .second-part > select{
+    width: calc(50% - 5px);
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    outline: none;
+}
+input{
+    color: #FFFFFF;
+}
+.bmi-calculate > select{
+    width: calc(100% - 5px);
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    outline: none;
+    position: relative;
+}
+select{
+    color: rgba(255, 255, 255, 0.5);
+    appearance: none;
+}
+.bmi-calculate .fa-solid{
+    position: absolute;
+    top: 92%;
+    left: 93%;
+}
+.second-part{
+    position: relative;
+}
+.second-part .fa-angle-down{
+    position: absolute;
+    top: 32%;
+    left: 93%;
+}
+option{
+    color: #000000;
+    background-color: rgb(115, 117, 114);
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+}
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
