@@ -226,8 +226,40 @@ header{
     text-align: center;
 }
 
+/* Run Extra Mile Styles */
+.run-extra-mile{
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+    padding: 40px 40px 38px 40px;
+    
+}
+.run-extra-mile-content{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.run-extra-mile-left{
+    width: calc(50% - 5px);
+}
+.run-extra-mile-right{
+    width: calc(50% - 5px);
+}
+.run-extra-mile-right img{
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.join-btn{
+    margin-top: 30px;
+}
+
+
 /* Training and Excercise Styling */
-.training-title, .training-subtitle, .bmi-calculator-subtitle{
+.training-title, 
+.training-subtitle, 
+.bmi-calculator-subtitle, 
+.run-mile-title, 
+.run-mile-subtitle{
     text-align: left;
 }
 .bmi-calculator-subtitle{
@@ -297,6 +329,12 @@ header{
 .bmi-content, table{
     margin-top: 70px;
 }
+.bmi-section-title, .bmi-section-subtitle{
+    width: 80%;
+    margin: 10px auto;
+    text-align: left;
+    padding-left: 300px;
+}
 .bmi-chart-title, .bmi-calculator-title{
     font-size: 2rem;
 }
@@ -306,6 +344,7 @@ table{
 th, td{
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 13px 18px;
+    text-align: left;
 }
 .bmi-content{
     background: rgb(34, 34, 34);
@@ -379,6 +418,19 @@ option{
         font-size: 25px;
         margin-right: 10px;
     }
+    .section-gap{
+        margin-top: 50px;
+    }
+    .section-title{
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    .section-subtitle{
+        font-size: 0.5rem;
+        font-weight: 400;
+        margin-top: 0.6rem;
+        margin-bottom: 0;
+    }
     .banner{
         margin-top: 50px;
         flex-direction: column;
@@ -442,6 +494,20 @@ option{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
     }
+    .run-extra-mile{
+        padding: 25px;
+        
+    }
+    .run-extra-mile-content{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .run-extra-mile-left{
+        width: 100%;
+    }
+    .run-extra-mile-right{
+        width: 100%;
+    }
     .kothin-item{
         height: 6.25rem;
     }
@@ -468,6 +534,12 @@ option{
     .bmi-calculate{
         margin-top: 42px;
     }
+    th, td{
+        font-size: 0.7rem;
+    }
+    .bmi-section-title, .bmi-section-subtitle{
+        padding-left: 0px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -476,6 +548,44 @@ option{
     }
     .nav-inputs > ul{
         gap: 1rem;
+    }
+    .section-gap{
+        margin-top: 80px;
+    }
+    .banner-title{
+        font-size: 4.5rem;
+        font-weight: 800;
+        line-height: 120%;
+    }
+    #shape{
+        font-size: 7.2rem;
+    }
+    .banner-subtitle{
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .colorful-btn{
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    #unique-btn{
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+    .section-title{
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .section-subtitle{
+        font-size: 0.7rem;
+        font-weight: 400;
+        margin-top: 0.6rem;
+        margin-bottom: 0;
     }
     .banner{
         margin-top: 50px;
@@ -493,6 +603,18 @@ option{
     .habit-items{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 40px;
+    }
+    .run-extra-mile-content{
+        gap: 50px;
+    }
+    .run-extra-mile-left{
+        width: calc(50% - 5px);
+    }
+    .run-extra-mile-right{
+        width: calc(50% - 5px);
+        height: 230px;
+        display: flex;
+        justify-content: center;
     }
     .kothin-item{
         height: 9.5rem;
@@ -525,5 +647,8 @@ option{
     }
     .bmi-calculate{
         margin-top: 42px;
+    }
+    .bmi-section-title, .bmi-section-subtitle{
+        padding-left: 0px;
     }
 }
