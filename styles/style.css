@@ -230,6 +230,9 @@ header{
 .training-title, .training-subtitle, .bmi-calculator-subtitle{
     text-align: left;
 }
+.bmi-calculator-subtitle{
+    padding-bottom: 10px;
+}
 .kothin-content{
     display: grid;
     grid-template-columns: repeat(22, 1fr);
@@ -291,9 +294,6 @@ header{
 }
 
 /* BMI Calculator Styles */
-.bmi{
-    background: rgb(34, 34, 34);
-}
 .bmi-content, table{
     margin-top: 70px;
 }
@@ -308,18 +308,21 @@ th, td{
     padding: 13px 18px;
 }
 .bmi-content{
+    background: rgb(34, 34, 34);
+}
+.bmi-content-moddhe{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
 }
 .bmi-calculate{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     position: relative;
 }
-.first-part > input, .second-part > input, .second-part > select{
+.first-part > input, .second-part > input, .second-part > select, .third-part > select{
     width: calc(50% - 5px);
     border-radius: 8px;
     border: none;
@@ -330,7 +333,7 @@ th, td{
 input{
     color: #FFFFFF;
 }
-.bmi-calculate > select{
+.third-part > select{
     width: calc(100% - 5px);
     border-radius: 8px;
     border: none;
@@ -343,15 +346,10 @@ select{
     color: rgba(255, 255, 255, 0.5);
     appearance: none;
 }
-.bmi-calculate .fa-solid{
-    position: absolute;
-    top: 92%;
-    left: 93%;
-}
-.second-part{
+.second-part, .third-part{
     position: relative;
 }
-.second-part .fa-angle-down{
+.second-part .fa-angle-down, .third-part .fa-angle-down{
     position: absolute;
     top: 32%;
     left: 93%;
@@ -361,6 +359,10 @@ option{
     background-color: rgb(115, 117, 114);
     font-family: Inter, sans-serif;
     font-size: 15px;
+}
+.calc-btn{
+    width: 40%;
+    margin-top: 30px;
 }
 
 /* Responsive Media Query */
@@ -460,6 +462,12 @@ option{
         margin-left: 5px;
         margin-top: 80px;
     }
+    .bmi-content-moddhe{
+        flex-direction: column;
+    }
+    .bmi-calculate{
+        margin-top: 42px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -511,5 +519,11 @@ option{
         font-size: 0.6rem;
         margin-left: 15px;
         margin-top: 130px;
+    }
+    .bmi-content-moddhe{
+        flex-direction: column;
+    }
+    .bmi-calculate{
+        margin-top: 42px;
     }
 }
