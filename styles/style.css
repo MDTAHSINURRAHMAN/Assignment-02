@@ -59,7 +59,7 @@
 }
 
 
-body{
+body, footer{
     font-family: "Inter", sans-serif;
     background-color: black;
 }
@@ -404,6 +404,123 @@ option{
     margin-top: 30px;
 }
 
+/* Chobir Baksho Styles */
+.chobir-baksho{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: rgba(255, 255, 255, 0.1);
+    gap: 1rem;
+    border-radius: 16px;
+    margin-top: 5rem;
+    /* border: 2px solid wheat; */
+}
+.baksher-bhetorer-chobi{
+    /* border: 2px solid white; */
+    border-radius: 16px;
+    height: 350px;
+}
+.baksher-bhetorer-chobi:nth-child(1){
+    background-image: url(../images/trainer1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baksher-bhetorer-chobi:nth-child(2){
+    background-image: url(../images/trainer2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baksher-bhetorer-chobi:nth-child(3){
+    background-image: url(../images/trainer3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baksher-bhetorer-chobi:nth-child(4){
+    background-image: url(../images/trainer4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baksher-bhetorer-chobi:nth-child(5){
+    background-image: url(../images/trainer5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baksher-bhetorer-chobi:nth-child(6){
+    background-image: url(../images/trainer6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baksho-title{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 290px;
+    margin-left: 20px;
+}
+.baksho-subtitle{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-content{
+    padding: 50px 0 0 0;
+    /* border: 2px solid wheat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content > div{
+    width: 33%;
+}
+.footer-first-part > h2{
+    font-size: 3.3rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.footer-first-part > p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.footer-second-part > h3, .footer-third-part > h3{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-left: 150px;
+}
+.footer-second-part > p, .footer-third-part > p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 1rem;
+    padding-left: 150px;
+}
+.footer-ending p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-ending-content{
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
     .navbar, .banner{
@@ -539,6 +656,42 @@ option{
     }
     .bmi-section-title, .bmi-section-subtitle{
         padding-left: 0px;
+    }
+    .chobir-baksho{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        border-radius: 16px;
+    }
+    .baksher-bhetorer-chobi:nth-child(1){
+        display: none;
+    }
+    .baksher-bhetorer-chobi:nth-child(2){
+        background-image: url(../images/trainer2.png);
+    }
+    .baksher-bhetorer-chobi:nth-child(3){
+        background-image: url(../images/trainer5.png);
+    }
+    .baksher-bhetorer-chobi:nth-child(4){
+        background-image: url(../images/trainer3.png);
+    }
+    .baksher-bhetorer-chobi:nth-child(5){
+        display: none;
+    }
+    .baksher-bhetorer-chobi:nth-child(6){
+        background-image: url(../images/trainer6.png);
+    }
+    .baksho-title{
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 200px;
+        margin-left: 10px;
+    }
+    .baksho-subtitle{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.7rem;
+        margin-top: 5px;
+        margin-left: 10px;
     }
 }
 
