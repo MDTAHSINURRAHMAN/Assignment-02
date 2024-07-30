@@ -221,7 +221,7 @@ header{
 .habit-item p{
     font-size: 0.5rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.5);
     margin-top: 0.6rem;
     text-align: center;
 }
@@ -372,6 +372,9 @@ th, td{
 input{
     color: #FFFFFF;
 }
+input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
 .third-part > select{
     width: calc(100% - 5px);
     border-radius: 8px;
@@ -388,10 +391,12 @@ select{
 .second-part, .third-part{
     position: relative;
 }
-.second-part .fa-angle-down, .third-part .fa-angle-down{
+.second-part > .fa-angle-down, .third-part > .fa-angle-down{
     position: absolute;
-    top: 32%;
-    left: 93%;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    top: 38%;
+    left: 94%;
 }
 option{
     color: #000000;
@@ -479,10 +484,10 @@ footer{
     padding: 50px 0 0 0;
     /* border: 2px solid wheat; */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
-.footer-content > div{
+.footer-first{
     width: 33%;
 }
 .footer-first-part > h2{
@@ -495,6 +500,10 @@ footer{
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
     margin-top: 1rem;
+}
+.footer-second{
+    display: flex;
+    /* justify-content: right; */
 }
 .footer-second-part > h3, .footer-third-part > h3{
     font-size: 2.8rem;
@@ -520,9 +529,16 @@ footer{
     width: 80%;
     margin: 0 auto;
 }
+hr{
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
+    .linear-width{
+        margin: 4rem auto;
+    }
     .navbar, .banner{
         width: 90%;
     }
@@ -543,7 +559,7 @@ footer{
         font-weight: 700;
     }
     .section-subtitle{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         font-weight: 400;
         margin-top: 0.6rem;
         margin-bottom: 0;
@@ -654,13 +670,26 @@ footer{
     th, td{
         font-size: 0.7rem;
     }
+    .bmi-chart-title, .bmi-calculator-title{
+        font-size: 1.5rem;
+    }
     .bmi-section-title, .bmi-section-subtitle{
         padding-left: 0px;
+    }
+    .second-part > .fa-angle-down, .third-part > .fa-angle-down{
+        font-size: 8px;
+        top: 38%;
+        left: 92%;
     }
     .chobir-baksho{
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         border-radius: 16px;
+    }
+    .baksher-bhetorer-chobi{
+        /* border: 2px solid white; */
+        border-radius: 16px;
+        height: 250px;
     }
     .baksher-bhetorer-chobi:nth-child(1){
         display: none;
@@ -693,9 +722,47 @@ footer{
         margin-top: 5px;
         margin-left: 10px;
     }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-first{
+        width: 100%;
+    }
+    .footer-first-part > h2{
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .footer-first-part > p{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    .footer-second{
+        flex-direction: column;
+        width: 100%;
+        gap: 1.3rem;
+        margin-top: 1.3rem;
+    }
+    .footer-second-part > h3, .footer-third-part > h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-left: 0;
+    }
+    .footer-second-part > p, .footer-third-part > p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    .footer-ending p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 15px 0;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    .linear-width{
+        margin: 4.5rem auto;
+    }
     .navbar, .banner{
         width: 90%;
     }
@@ -803,5 +870,67 @@ footer{
     }
     .bmi-section-title, .bmi-section-subtitle{
         padding-left: 0px;
+    }
+    .bmi-chart-title, .bmi-calculator-title{
+        font-size: 1.8rem;
+    }
+    .footer-content{
+        padding: 45px 0 0 0;
+        flex-direction: column;
+    }
+    .baksher-bhetorer-chobi{
+        border-radius: 16px;
+        height: 280px;
+    }
+    .baksho-title{
+        margin-top: 230px;
+        margin-left: 15px;
+    }
+    .baksho-subtitle{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.7rem;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+    .footer-first{
+        width: 100%;
+    }
+    .footer-first-part > h2{
+        font-size: 2.2rem;
+        font-weight: 800;
+        font-style: italic;
+    }
+    .footer-first-part > p{
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+    .footer-second{
+        width: 100%;
+        gap: 100px;
+    }
+    .footer-second-part > h3, .footer-third-part > h3{
+        font-size: 1.8rem;
+        margin-top: 1.8rem;
+        padding-left: 0;
+    }
+    .footer-second-part > p, .footer-third-part > p{
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    .footer-ending p{
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    .footer-ending-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+    hr{
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
 }
