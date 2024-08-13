@@ -328,6 +328,9 @@ header{
 }
 
 /* Our Plan Styles */
+.our-plan-container{
+    margin-top: 80px;
+}
 .our-plan-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
