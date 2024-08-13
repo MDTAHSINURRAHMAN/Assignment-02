@@ -340,6 +340,7 @@ header{
     align-items: center;
     padding: 50px;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
     /* transform: skew(10deg); */
 }
 .our-plan-title{
@@ -870,12 +871,12 @@ hr{
         margin-bottom: 1.5rem;
     }
     .colorful-btn{
-        padding: 0.8rem 2rem;
+        padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
         font-weight: 600;
     }
     #unique-btn{
-        padding: 0.8rem 2rem;
+        padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
         font-weight: 600;
         margin-left: 1rem;
@@ -949,54 +950,26 @@ hr{
         margin-top: 30px;
     }
     .our-plan-content{
-        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
     .our-plan-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        /* transform: skew(10deg); */
+        padding: 25px;
     }
     .our-plan-title{
-        font-size: 1.8rem;
-        color: #FFFFFF;
-        font-weight: 600;
-        text-align: center;
+        font-size: 1rem;
     }
     .our-plan-subtitle{
-        font-size: 3.3rem;
-        color: rgb(230, 83, 60);
-        font-weight: 800;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 0.2rem;
+        font-size: 2.3rem;
     }
     .our-plan-sub-subtitle{
-        font-size: 1.3rem;
-        color: rgba(255, 255, 255, 0.5);
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .our-plan-item .colorful-btn{
-        margin-top: 25px;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
     }
     .our-plan-list{
-        padding: 20px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+        gap: 11px;
     }
-    
     .our-plan-list > li{
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 14px;
-        list-style: none;
+        font-size: 12px;
     }
     .bmi-content-moddhe{
         flex-direction: column;
@@ -1165,6 +1138,31 @@ hr{
         font-size: 0.6rem;
         margin-left: 15px;
         margin-top: 130px;
+    }
+    .our-plan-container{
+        margin-top: 30px;
+    }
+    .our-plan-content{
+        gap: 10px;
+    }
+    .our-plan-item{
+        padding: 25px;
+    }
+    .our-plan-title{
+        font-size: 1.4rem;
+    }
+    .our-plan-subtitle{
+        font-size: 2.8rem;
+    }
+    .our-plan-sub-subtitle{
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    .our-plan-list{
+        gap: 13px;
+    }
+    .our-plan-list > li{
+        font-size: 13px;
     }
     .bmi-content-moddhe{
         flex-direction: column;
